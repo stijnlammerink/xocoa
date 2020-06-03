@@ -8,13 +8,16 @@
   box-sizing: border-box;
 }
 *::selection {
-  background-color: green;
-  color: white;
+  background-color: rgba(255, 151, 144, .99);
+}
+img::selection, svg::selection {
+  background-color: rgba(255, 151, 144, 0);
 }
 
 /* ------- Font ------- */
 body {
   font-family: azo-sans-web, sans-serif;
+  overflow-x: hidden;
 }
 
 /* ------- Colors ------- */
@@ -226,6 +229,7 @@ body {
 /* ------- Navigation ------- */
 .nav__wrapper {
   position: relative;
+  z-index: 10;
 }
 .nav {
   display: flex;
@@ -261,6 +265,10 @@ body {
   text-decoration: none;
 }
 
+.nav__items li:last-of-type a {
+  background-color: var(--pink);
+}
+
 /* --------------- Homepage --------------- */
 /* Header */
 .header--large {
@@ -270,6 +278,10 @@ body {
   background: url(/img/Header_Background.svg);
   background-size: cover;
   background-position: bottom;
+  position: relative;
+}
+.header__container {
+  z-index: 1;
 }
 .header__text-col {
   display: flex;
@@ -277,12 +289,84 @@ body {
   flex-direction: column;
   max-width: 95%;
 }
+.header__title {
+  position: relative;
+  z-index: 1;
+}
+.header__title::after {
+  content:'';
+  background-image: url(/img/Letter_H.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  z-index: -1;
+  transform: translate3d(-41px, -25px, 0);
+}
 .header__image-col {
   display: flex;
   justify-content: flex-end;
 }
 .header__image {
   max-width: 95%;
+}
+.header__bg-icon {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+.header__bg-icon.tree {
+  max-width: 140px;
+  bottom: 0;
+  left: 0;
+  transform: translate3d(30px, -40px, 0);
+}
+.header__bg-icon.cloud {
+  max-width: 140px;
+  top: 0;
+  left: 0;
+  transform: translate3d(-30px, 65px, 0);
+}
+.header__bg-icon.circle-first {
+  max-width: 50px;
+  top: 0;
+  left: 0;
+  transform: translate3d(32vw, 80px, 0);
+}
+.header__bg-icon.figure-first {
+  max-width: 140px;
+  top: 0;
+  left: 0;
+  transform: translate3d(36vw, -70px, 0);
+}
+.header__bg-icon.circle-second {
+  max-width: 120px;
+  bottom: 0;
+  left: 0;
+  transform: translate3d(42vw, 40%, 0);
+}
+.header__bg-icon.beans {
+  position: absolute;
+  max-width: 140px;
+  top: 0;
+  right: 0;
+  transform: translate3d(-38vw, 140px, 0);
+}
+.header__bg-icon.flowers {
+  position: absolute;
+  max-width: 160px;
+  top: 0;
+  right: 0;
+  transform: translate3d(20%, -10%, 0);
+}
+.header__bg-icon.figure-second {
+  position: absolute;
+  max-width: 130px;
+  bottom: 0;
+  right: 0;
+  transform: translate3d(25%, -40vh, 0);
 }
 
 /* Missie */
@@ -351,13 +435,14 @@ body {
 }
 .product {
   position: relative;
+  height: 100%;
 }
 .product__wrapper {
   background-color: #E8F5F6;
   clip-path: url(#productPath);
   position: relative;
   width: 101%;
-  height: 100%;
+  height: 283px;
 }
 #productPath {
   transform: scale(.6);
