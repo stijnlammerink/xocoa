@@ -349,6 +349,42 @@ body {
   line-height: 1.8rem;
   margin-left: 18px;
 }
+.product {
+  position: relative;
+}
+.product__wrapper {
+  background-color: #E8F5F6;
+  clip-path: url(#productPath);
+  position: relative;
+  width: 101%;
+  height: 100%;
+}
+#productPath {
+  transform: scale(.6);
+}
+.product__img {
+  max-width: 95%;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+.product__btn {
+  background-color: var(--pink);
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate3d(5%, 44%, 0);
+}
+.product__btn i {
+  opacity: .5;
+}
 
 /* Footer */
 .footer {
