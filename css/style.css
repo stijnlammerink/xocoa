@@ -1,0 +1,356 @@
+/* Imports */
+@import url("https://use.typekit.net/sla5yzn.css");
+
+/* --------------- General --------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: green;
+  color: white;
+}
+
+/* ------- Font ------- */
+body {
+  font-family: azo-sans-web, sans-serif;
+}
+
+/* ------- Colors ------- */
+:root {
+  --light-blue: #A5E4EA;
+  --dark-blue: #062935;
+  --pink: #FF9790;
+}
+/* ------- Text Colors ------- */
+.text-blue {
+  color: var(--dark-blue);
+}
+.text-white {
+  color: white;
+}
+
+/* ------- Fonts ------- */
+.h1, .h2 {
+  font-weight: 900;
+}
+.h1 {
+  font-size: 3.2rem;
+  line-height: 3.4rem;
+}
+.h2 {
+  font-size: 1.4rem;
+}
+.p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+.fw-bold {
+  font-weight: 700;
+}
+.text-small {
+  font-size: .8rem;
+}
+
+@media (max-width: 991px) {
+  .h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .h2 {
+    font-size: 1.7rem;
+  }
+}
+.text-center {
+  text-align: center;
+}
+
+/* ------- Padding & Margin ------- */
+/* Top */
+.pt-8 {
+  padding-top: .5rem;
+}
+.pt-16 {
+  padding-top: 1rem;
+}
+.pt-24 {
+  padding-top: 1.5rem;
+}
+.pt-32 {
+  padding-top: 2rem;
+}
+.pt-48 {
+  padding-top: 3rem;
+}
+.pt-60 {
+  padding-top: 3.75rem;
+}
+.pt-80 {
+  padding-top: 5rem;
+}
+.pt-120 {
+  padding-top: 7.5rem;
+}
+
+/* Bottom */
+.pb-8 {
+  padding-bottom: .5rem;
+}
+.pb-16 {
+  padding-bottom: 1rem;
+}
+.pb-24 {
+  padding-bottom: 1.5rem;
+}
+.pb-32 {
+  padding-bottom: 2rem;
+}
+.pb-48 {
+  padding-bottom: 3rem;
+}
+.pb-60 {
+  padding-bottom: 3.75rem;
+}
+.pb-80 {
+  padding-bottom: 5rem;
+}
+.pb-120 {
+  padding-bottom: 7.5rem;
+}
+
+/* Margin */
+.mb-8 {
+  margin-bottom: .5rem;
+}
+.mb-16 {
+  margin-bottom: 1rem;
+}
+.mb-24 {
+  margin-bottom: 1.5rem;
+}
+.mb-32 {
+  margin-bottom: 2rem;
+}
+.mb-48 {
+  margin-bottom: 3rem;
+}
+.mb-60 {
+  margin-bottom: 3.75rem;
+}
+.mb-80 {
+  margin-bottom: 5rem;
+}
+.mb-120 {
+  margin-bottom: 7.5rem;
+}
+
+@media (max-width: 991px) {
+
+  /* Top Mobile */
+  .pt-xs-0 {
+    padding-top: 0;
+  }
+  .pt-xs-8 {
+    padding-top: .5rem;
+  }
+  .pt-xs-16 {
+    padding-top: 1rem;
+  }
+  .pt-xs-24 {
+    padding-top: 1.5rem;
+  }
+  .pt-xs-32 {
+    padding-top: 2rem;
+  }
+  .pt-xs-48 {
+    padding-top: 3rem;
+  }
+  .pt-xs-60 {
+    padding-top: 3.75rem;
+  }
+  .pt-xs-84 {
+    padding-top: 5.25rem;
+  }
+
+  /* Bottom Mobile */
+  .pb-xs-0 {
+    padding-bottom: 0;
+  }
+  .pb-xs-8 {
+    padding-bottom: .5rem;
+  }
+  .pb-xs-16 {
+    padding-bottom: 1rem;
+  }
+  .pb-xs-24 {
+    padding-bottom: 1.5rem;
+  }
+  .pb-xs-32 {
+    padding-bottom: 2rem;
+  }
+  .pb-xs-48 {
+    padding-bottom: 3rem;
+  }
+  .pb-xs-60 {
+    padding-bottom: 3.75rem;
+  }
+  .pb-xs-84 {
+    padding-bottom: 5.25rem;
+  }
+
+  /* Margin Mobile */
+  .mb-xs-0 {
+    margin-bottom: 0;
+  }
+  .mb-xs-8 {
+    margin-bottom: .5rem;
+  }
+  .mb-xs-16 {
+    margin-bottom: 1rem;
+  }
+  .mb-xs-24 {
+    margin-bottom: 1.5rem;
+  }
+  .mb-xs-32 {
+    margin-bottom: 2rem;
+  }
+  .mb-xs-48 {
+    margin-bottom: 3rem;
+  }
+  .mb-xs-60 {
+    margin-bottom: 3.75rem;
+  } 
+}
+
+/* ------- Navigation ------- */
+.nav__wrapper {
+  position: relative;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+}
+.nav__logo-wrapper {
+  background-color: white;
+  clip-path: url(#logoPath);
+  position: relative;
+  width: 237px;
+  height: 98px;
+}
+.nav__logo {
+  width: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+
+}
+.nav__items {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  list-style-type: none;
+  align-items: center;
+}
+.nav__items a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* --------------- Homepage --------------- */
+/* Header */
+.header--large {
+  height: 97vh;
+  display: flex;
+  align-items: center;
+  background: url(/img/Header_Background.svg);
+  background-size: cover;
+  background-position: bottom;
+}
+.header__text-col {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 95%;
+}
+.header__image-col {
+  display: flex;
+  justify-content: flex-end;
+}
+.header__image {
+  max-width: 95%;
+}
+
+/* Missie */
+.mission__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mission__card:nth-child(1)::after {
+  content:'';
+  background: url(/img/Mission_Background_1.svg);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+  height: 130%;
+  width: 130%;
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  z-index: -1;
+}
+.mission__card:nth-child(2)::after {
+  content:'';
+  background: url(/img/Mission_Background_2.svg);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+  height: 130%;
+  width: 130%;
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  z-index: -1;
+}
+.mission__card:nth-child(3)::after {
+  content:'';
+  background: url(/img/Mission_Background_3.svg);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+  height: 130%;
+  width: 130%;
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  z-index: -1;
+}
+.mission__card__icon {
+  max-width: 80px;
+  margin-bottom: 1rem;
+  padding-top: 3rem;
+}
+.mission__card__text {
+  width: 70%;
+  text-align: center;
+}
+
+/* Assortiment */
+.products__section {
+  background-color: #F8F8F8;
+}
+.product__list {
+  line-height: 1.8rem;
+  margin-left: 18px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-blue);
+}
