@@ -264,15 +264,30 @@ body {
 }
 .nav__items.open {
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   position: fixed;
   display: flex;
   justify-content: space-around;
   left: 0;
   top: 0;
-  background-color: var(--light-blue);
+  background: url(/img/Header_Background.svg);
+  background-size: cover;
+  background-position: bottom;
   z-index: 5;
+  padding: 25vh 0;
+  font-size: 1.3rem;
+}
+.nav__overlay {
+  height: 100vh;
+  width: 100vw;
+  z-index: 8;
+  background-color: rgba(0, 0, 0, .6);
+  position: fixed;
+  display: none;
+}
+.nav__overlay.active {
+  display: block;
 }
 @media (max-width: 991px) {
   .nav__items {
@@ -563,4 +578,26 @@ button {
 /* Footer */
 .footer {
   background-color: var(--dark-blue);
+}
+.footer li {
+  list-style-type: none;
+  margin-bottom: .4rem;
+}
+.footer li:last-of-type {
+  margin-bottom: 0;
+}
+.footer li a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer li a:hover {
+  text-decoration: underline;
+}
+.footer i {
+  margin-right: .5rem;
+}
+
+.footer .socials i {
+  font-size: 1.3rem;
+  margin-right: .7rem;
 }
