@@ -579,6 +579,11 @@ button {
 .footer {
   background-color: var(--dark-blue);
 }
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
 .footer li {
   list-style-type: none;
   margin-bottom: .4rem;
@@ -596,8 +601,33 @@ button {
 .footer i {
   margin-right: .5rem;
 }
-
-.footer .socials i {
+.footer .footer__socials i {
   font-size: 1.3rem;
   margin-right: .7rem;
+}
+.footer__logo {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .footer__logo {
+    display: none;
+  }
+}
+.footer__logo img {
+  max-width: 80%;
+}
+.footer__small-text {
+  color: #546C74;
+  font-size: .8rem;
+}
+.footer__small-text a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer__small-text__links a:first-of-type {
+  margin-right: 1rem;
+}
+.footer__small-text__credits {
+  text-align: center;
 }
