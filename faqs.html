@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>XOCOA</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.css">
+  <script src="https://kit.fontawesome.com/e0205e3496.js" crossorigin="anonymous"></script>
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+  <!-- Navigation -->
   <nav>
     <div class="container nav__wrapper">
       <div class="nav">
@@ -19,48 +21,115 @@
                 <path d="M234.78,0S4.29.12,4.14,0C1.76,43.93-10,83.81,21.18,93.22c22,4.42,93.06,9.37,164.78-3.6,52.9-10.66,50.15-26.32,51-44.87A267.81,267.81,0,0,0,234.78,0Z"/>
               </clipPath>
             </defs>
-        </svg>
+          </svg>
         </div>
         <ul class="nav__items">
-          <li><a href="index.html#onze-missie">Onze missie</a></li>
+          <li><a href="#onze-missie">Onze missie</a></li>
           <li><a href="#producten">Producten</a></li>
           <li><a href="faqs.html">FAQ's</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
+      <div class="nav__toggle">
+        <button class="nav__toggle-icon">Menu</button>
+      </div>
     </div>
   </nav>
-  <header class="header--large">
-    <div class="container">
+  <div class="nav__overlay"></div>
+  <!-- Header -->
+  <header class="header header--small">
+    <div class="container header__container">
       <div class="row">
-        <div class="col-12 col-md-6 header__text-col">
-          <h1 class="h1 text-blue mb-16">
-            FAQ's
-          </h1>
+        <div class="col-12 col-md-6 pt-120">
+          <a href="index.html" class="h2 text-blue back-btn"><i class="fas fa-caret-left"></i> Terug</a>
+        </div>
+        <div class="col-12 col-md-6 header__image-col">
+          
         </div>
       </div>
     </div>
+    <img class="header__bg-icon tree" src="/img/Tree.svg" alt="">
+    <img class="header__bg-icon cloud" src="/img/Cloud.svg" alt="">
+    <img class="header__bg-icon circle-first" src="/img/Circle.svg" alt="">
+    <img class="header__bg-icon figure-first" src="/img/Figure.svg" alt="">
+    <img class="header__bg-icon circle-second" src="/img/Circle.svg" alt="">
+    <img class="header__bg-icon beans" src="/img/Beans.svg" alt="">
+    <img class="header__bg-icon flowers" src="/img/Flowers.svg" alt="">
+    <img class="header__bg-icon figure-second" src="/img/Figure.svg" alt="">
   </header>
 
-  <!-- Footer -->
-  <section class="footer text-white pt-60 pb-60">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-3">
-          <h3 class="h2">Links</h3>
-        </div>
-        <div class="col-12 col-md-3">
-          <h3 class="h2">Contact</h3>
-        </div>
-        <div class="col-12 col-md-3">
-          <h3 class="h2">Volg ons</h3>
-        </div>
-        <div class="col-12 col-md-3"></div>
+  <!-- Product Info -->
+  <div class="container pt-48 pb-60">
+    <div class="row">
+      <div class="col-6 text-blue">
+        <span class="new-text">Nieuw in ons assortiment!</span>
+        <h1 class="h1">Melk chocolade</h1>
+        <p class="p mb-32">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+        </p>
+        <ul class="mb-24">
+          <li>Lorem ipsum dolor sit amet consetetur</li>
+          <li>Sadipscing elitr sed diam nonumy eirmod</li>
+          <li>Tempor invidunt ut labore et dolore</li>
+        </ul>
+        <strong>Ook nieuw:</strong>
+        <img class="mb-32" src="/img/Puur_Preview.png" alt="">
+        <h2 class="h2">Ingrediënten</h2>
+        <p class="p mb-32">
+          Lorem ipsum, dolor, sit amet, consetetur sadipscing, elitr, sed diam, nonumy eirmod, tempor invidunt, ut labore et.
+        </p>
+        <h2 class="h2">Voedingswaarden</h2>
+        <p class="p mb-16">
+          Lorem ipsum dolor sit amet consetetur sadipscing. 
+        </p>
+        <ul class="ingredients">
+          <li><span>Soort</span> <span>Per 100 gram</span></li>
+          <li><span>Energie</span> <span>2280 kJ (545 kcal)</span></li>
+          <li><span>Vet</span> <span>33.2 g</span></li>
+          <li><span class="ingredients__indent">Waarvan verzadigd</span> <span>20 g</span></li>
+          <li><span>Koolhydraten</span> <span>51.9 g</span></li>
+          <li><span class="ingredients__indent">Waarvan suikers</span> <span>50.7 g</span></li>
+          <li><span>Eiwitten</span> <span>7.7 g</span></li>
+          <li><span>Zout</span> <span>0.21 g</span></li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-white pt-60 pb-32 pt-xs-48" id="contact">
+    <div class="container">
+      <div class="row mb-48">
+        <div class="col-12 col-md-3 mb-xs-32">
+          <h3 class="h2 mb-8">Links</h3>
+          <ul>
+            <li><a href="#onze-missie">Onze missie</a></li>
+            <li><a href="#producten">Producten</a></li>
+            <li><a href="faqs.html">FAQ's</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3 mb-xs-32">
+          <h3 class="h2 mb-8">Contact</h3>
+          <li><i class="far fa-envelope"></i><a href="#">contact@xocoa.nl</a></li>
+          <li><i class="fas fa-phone-alt"></i><a href="#">0800 - 123 456</a></li>
+        </div>
+        <div class="col-12 col-md-3 footer__socials mb-xs-32">
+          <h3 class="h2 mb-8">Volg ons</h3>
+          <i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i>
+        </div>
+        <div class="col-12 col-md-3 footer__logo">
+          <img src="img/XOCOA_Logo_SingleColor.svg" alt="">
+        </div>
+      </div>
+      <div class="row footer__small-text">
+        <div class="col-12 col-md-4 footer__small-text__links mb-xs-8"><a href="#">Disclaimer</a><a href="#">Privacyverklaring</a></div>
+        <div class="col-12 col-md-4 footer__small-text__credits">© 2020 XOCOA</div>
+      </div>
+    </div>
+  </footer>
   
   <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

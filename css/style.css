@@ -371,14 +371,19 @@ button {
 
 /* --------------- Homepage --------------- */
 /* Header */
-.header--large {
-  height: 97vh;
+.header {
   display: flex;
   align-items: center;
   background: url(/img/Header_Background.svg);
   background-size: cover;
   background-position: bottom;
   position: relative;
+}
+.header--large {
+  height: 97vh;
+}
+.header--small {
+  min-height: 40vh;
 }
 .header__container {
   z-index: 1;
@@ -567,6 +572,11 @@ button {
   bottom: 0;
   transform: translate3d(20%, 44%, 0);
   clip-path: url(#btnPath);
+  transition: .2s;
+}
+.product__btn:hover {
+  transform: scale(1.05) translate3d(20%, 44%, 0);
+  transition: .2s;
 }
 #btnPath {
   transform: scale(.65);
@@ -630,4 +640,38 @@ button {
 }
 .footer__small-text__credits {
   text-align: center;
+}
+
+/* ------- FAQ Pagina ------- */
+.back-btn {
+  text-decoration: none;
+}
+.back-btn i {
+  opacity: .5;
+  transition: .2s;
+  transform: translate3d(0, 2px, 0);
+}
+.back-btn:hover i {
+  opacity: 1;
+  transform: translate3d(-5px, 2px, 0);
+  transition: .2s;
+}
+.new-text {
+  color: var(--pink);
+  font-size: .9rem;
+}
+.ingredients li {
+  list-style-type: none;
+  border-bottom: 1px solid #D1D1D1;
+  display: flex;
+  justify-content: space-between;
+  font-size: .9rem;
+  padding: .3rem 0;
+}
+.ingredients li:first-of-type {
+  border-bottom: 2px solid #D1D1D1;
+  font-weight: 700;
+}
+.ingredients__indent {
+  padding-left: 1.1rem;
 }
