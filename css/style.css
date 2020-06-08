@@ -451,9 +451,13 @@ button {
   display: flex;
   justify-content: flex-end;
 }
-.header__image {
+.header__image-wrapper {
   max-width: 95%;
-  transform: translate3d(0, 50px, 0);
+  display: flex;
+  justify-content: flex-end;
+}
+.header__image {
+  width: 100%;
 }
 .header__bg-icon {
   position: absolute;
@@ -471,7 +475,7 @@ button {
     display: flex;
     flex-direction: column-reverse;
   }
-  .header__image {
+  .header__image-wrapper {
     max-width: 70%;
     transform: translate3d(15%, -20px, 0);
   }
