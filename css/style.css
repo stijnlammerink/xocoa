@@ -431,6 +431,11 @@ button {
   flex-direction: column;
   max-width: 95%;
 }
+@media (max-width: 767px) {
+  .header__text-col {
+    padding-left: 3rem;
+  }
+}
 .header__title {
   position: relative;
   z-index: 1;
@@ -611,44 +616,40 @@ button {
   flex-direction: column;
   align-items: center;
 }
-.mission__card:nth-child(1)::after {
+.mission__card::after {
   content:'';
-  background: url(/img/Mission_Background_1.svg);
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: center;
   height: 130%;
-  width: 130%;
+  width: 100%;
   position: absolute;
   top: -15%;
-  left: -15%;
+  left: 0;
   z-index: -1;
+}
+
+.mission__card:nth-child(1)::after {
+  background-image: url(/img/Mission_Background_1.svg);
 }
 .mission__card:nth-child(2)::after {
-  content:'';
-  background: url(/img/Mission_Background_2.svg);
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-position: center;
-  height: 130%;
-  width: 130%;
-  position: absolute;
-  top: -15%;
-  left: -15%;
-  z-index: -1;
+  background-image: url(/img/Mission_Background_2.svg);
 }
 .mission__card:nth-child(3)::after {
-  content:'';
-  background: url(/img/Mission_Background_3.svg);
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-position: center;
-  height: 130%;
-  width: 130%;
-  position: absolute;
-  top: -15%;
-  left: -15%;
-  z-index: -1;
+  background-image: url(/img/Mission_Background_3.svg);
+}
+@media (max-width: 991px) {
+  .mission__card {
+    margin-bottom: 12rem;
+  }
+  .mission__card:last-of-type {
+    margin-bottom: 5rem;
+  }
+  .mission__card::after {
+    height: 180%;
+    top: -25%;
+  }
+
 }
 .mission__card__icon {
   max-width: 80px;
