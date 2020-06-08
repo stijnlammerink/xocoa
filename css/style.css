@@ -716,7 +716,7 @@ button {
 
 /* Waar te vinden */
 .where__image {
-  max-width: 100%;
+  width: 100%;
 }
 .where__text {
   position: relative;
@@ -738,6 +738,39 @@ button {
   top: -15%;
   left: -15%;
   z-index: -1;
+}
+@media (max-width: 991px) {
+  .where__row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .where__text {
+    padding:  6rem;
+    z-index: -1;
+  }
+  .where__image-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .where__image {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .where__text {
+    padding:  6rem 2rem;
+  }
+  .where__image {
+    width: 80%;
+  }
+}
+@media (max-width: 575px) {
+  .where__image-wrapper {
+    transform: translate3d(40px, -70px, 10px);
+  }
+  .where__image {
+    width: 90%;
+  }
 }
 
 /* Footer */
@@ -838,6 +871,12 @@ button {
   left: 0;
   position: absolute;
   transform: translate3d(-40px, -90px, 0);
+}
+@media (max-width: 991px) {
+  .product__row-inverted {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 @media (max-width: 767px) {
   .product__row {
