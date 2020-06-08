@@ -718,6 +718,27 @@ button {
 .where__image {
   max-width: 100%;
 }
+.where__text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.where__text::after {
+  content:'';
+  background: url(/img/Where_Background.svg);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+  background-size: contain;
+  height: 130%;
+  width: 130%;
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  z-index: -1;
+}
 
 /* Footer */
 .footer {
