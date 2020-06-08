@@ -13,21 +13,21 @@
   <nav>
     <div class="container nav__wrapper">
       <div class="nav">
-        <div class="nav__logo-wrapper">
-          <img class="nav__logo" src="img/XOCOA_Logo_MultiColor.svg" alt="">
-          <svg>
-            <defs>
-              <clipPath id="logoPath">
-                <path d="M234.78,0S4.29.12,4.14,0C1.76,43.93-10,83.81,21.18,93.22c22,4.42,93.06,9.37,164.78-3.6,52.9-10.66,50.15-26.32,51-44.87A267.81,267.81,0,0,0,234.78,0Z"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
+        <a href="index.html"><img class="nav__logo" src="img/XOCOA_Logo_Wrapper.svg" alt=""></a>
         <ul class="nav__items">
           <li><a href="#onze-missie">Onze missie</a></li>
           <li><a href="#producten">Producten</a></li>
           <li><a href="faqs.html">FAQ's</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <svg>
+              <defs>
+                <clipPath id="contactPath">
+                  <path d="M62.25,77.26C56.55,76.21-.25,77.79,0,47,.08,32.08-.11,22.38,41.43,6.66,96.67-5.6,155.56,1.9,171.55,6.79c27.57,11.89,12.56,48.91-4.27,57.4S87.14,79.73,62.25,77.26Z"/>
+                </clipPath>
+              </defs>
+            </svg>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
       <div class="nav__toggle">
@@ -39,7 +39,7 @@
   <!-- Header -->
   <header class="header header--large">
     <div class="container header__container">
-      <div class="row">
+      <div class="row header__row">
         <div class="col-12 col-md-6 header__text-col">
           <h1 class="h1 text-blue header__title mb-16">
             Eerlijke chocolade voor een eerlijke prijs.
@@ -146,7 +146,7 @@
               </svg>
               <img class="product__img" src="img/Puur_Mockup.png" alt="">
             </figure>
-            <a href="#" class="product__btn">Bekijk <i class="fas fa-caret-right"></i></a>
+            <a href="pure-chocolate.html" class="product__btn">Bekijk <i class="fas fa-caret-right"></i></a>
           </div>
         </div>
         <div class="col-12 col-md-6 text-blue">
@@ -165,7 +165,9 @@
   <!-- Waar te vinden? -->
   <div class="container pt-80 pb-80">
     <div class="row">
-      <div class="col-12 col-md-6"></div>
+      <div class="col-12 col-md-6">
+        <img class="where__image" src="/img/Beans_image.png" alt="">
+      </div>
       <div class="col-12 col-md-6 text-blue">
         <h3 class="h1">Waar te vinden?</h3>
         <p class="p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
@@ -174,7 +176,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="footer text-white pt-60 pb-32 pt-xs-48" id="contact">
+  <footer class="footer text-white pt-60 pb-16 pt-xs-48" id="contact">
     <div class="container">
       <div class="row mb-48">
         <div class="col-12 col-md-3 mb-xs-32">
